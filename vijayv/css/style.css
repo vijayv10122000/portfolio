@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rowdies&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Signika Negative', sans-serif;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    background-color: #f5f5f5;
+}
+
+/* 
+color 1 = #D8D8F6
+color 2 = #B18FCF
+color 3 = #978897
+color 4 = #494850
+color 5 = #2C2C34
+*/
+.session-1{
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 80vw; 
+    height: 85vh;  
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    filter: drop-shadow(
+      1px 2px 8px #4948502e
+    ); 
+}
+header{
+    padding: 20px 40px  ;
+    display: flex;
+    justify-content: end;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+header nav ul li{
+}
+header nav ul li a{
+    font-family: 'Rowdies', cursive;
+    font-size: bold;
+    text-decoration: none;
+    color: #B18FCF;
+    display: block;
+    padding: 3px 0px 2px 0px;
+    position: relative;
+}
+header nav ul li a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #B18FCF;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+    transition: all .5s;
+}
+header nav ul li:hover a::after{
+    width: 100%;
+}   
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-auto-flow: row;
+    }
+.hero-left{
+    min-height:340px;
+    display: flex;  
+    padding-left: 25%;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-left .span-1{
+    font-family: 'Rowdies', cursive;
+    font-size: 400;
+    font-size: 16px ;
+    padding: 10px 0px;
+}
+.hero-left .h1-1{
+    font-size: 50px;
+    color: #B18FCF;
+    font-weight: 500;
+}
+.hero-left .p-1{
+    padding: 10px 0px;
+    font-family: 'Rowdies', cursive;
+}
+
+.hero-left .span-2 a{
+    margin: 15px 0px;
+    background-color: #ee5976   ;
+    display: block;
+    padding:  10px 20px;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    filter: drop-shadow(
+      1px 2px 8px #4948502e
+    );  
+}
+.hero-right{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.hero-right img{
+    width: 70%;
+}
+.next-page-arrow{
+    position: absolute;
+    bottom: 5%;
+    animation: arrow 2s infinite;
+    right: 3%;
+    cursor: pointer;
+}
+.next-page-arrow svg{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+@keyframes arrow {
+    0%{
+        bottom: 3%;
+    }
+    50%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 3%;
+    }
+}
+
+.session-2{
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+}
